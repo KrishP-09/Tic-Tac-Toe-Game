@@ -57,9 +57,10 @@ but(1).addEventListener('click',(box)=>{
             }
         }
         // draw
+    else{
         if(draw==9){
             mid(30);   
-        }
+        }}
         but(1).disabled ="true";
     });
     
@@ -74,7 +75,7 @@ but(2).addEventListener('click',()=>{
                 mid(10);
             }
     }
-        else{
+        else if(i==1){
             but(2).innerText="O";
             i--; 
             b=2;
@@ -82,9 +83,10 @@ but(2).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-        }if(draw==9){
+        }else{
+        if(draw==9){
             mid(30);   
-        }
+        }}
         but(2).disabled ="true";
 });
 but(3).addEventListener('click',()=>{
@@ -98,7 +100,7 @@ but(3).addEventListener('click',()=>{
                 mid(10);
             }
     }
-        else{
+        else if(i==1){
             but(3).innerText="O";
             i--; 
             c=2;
@@ -106,9 +108,10 @@ but(3).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-            }if(draw==9){
-                mid(30);   
-            }
+            }else{
+        if(draw==9){
+            mid(30);   
+        }}
             but(3).disabled ="true";
     });
 
@@ -123,7 +126,7 @@ but(3).addEventListener('click',()=>{
                 mid(10);
             }
     }
-        else {
+        else if(i==1){
             but(4).innerText="O";
             i--;
             d=2; 
@@ -131,9 +134,10 @@ but(3).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-            }if(draw==9){
-                mid(30);   
-            }
+            }else{
+        if(draw==9){
+            mid(30);   
+        }}
             but(4).disabled ="true";
     });
         but(5).addEventListener('click',()=>{
@@ -147,7 +151,7 @@ but(3).addEventListener('click',()=>{
                 mid(10);
             }
     }
-        else{
+       else if(i==1){
             but(5).innerText="O";
             i--; 
             e=2
@@ -155,9 +159,10 @@ but(3).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-            }if(draw==9){
-                mid(30);   
-            }
+            }else{
+        if(draw==9){
+            mid(30);   
+        }}
             but(5).disabled ="true";
     });
         but(6).addEventListener('click',()=>{
@@ -171,7 +176,7 @@ but(3).addEventListener('click',()=>{
                 mid(10);
             }
     }
-        else{
+      else if(i==1){
             but(6).innerText="O";
             i--;
             f=2; 
@@ -179,9 +184,10 @@ but(3).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-            }if(draw==9){
-                mid(30);   
-            }
+            }else{
+        if(draw==9){
+            mid(30);   
+        }}
             but(6).disabled ="true";
     });
         but(7).addEventListener('click',()=>{
@@ -195,7 +201,7 @@ but(3).addEventListener('click',()=>{
                 mid(10);
             }
     }
-        else{
+        else if(i==1){
             but(7).innerText="O";
             i--;
             g=2; 
@@ -203,9 +209,10 @@ but(3).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-        }if(draw==9){
+        }else{
+        if(draw==9){
             mid(30);   
-        }
+        }}
         but(7).disabled ="true";});
 but(8).addEventListener('click',()=>{
     draw++;
@@ -218,7 +225,7 @@ but(8).addEventListener('click',()=>{
                 mid(10);
             }
     }
-        else{
+        else if(i==1){
             but(8).innerText="O";
             i--;
             h=2;
@@ -227,10 +234,10 @@ but(8).addEventListener('click',()=>{
                     mid(20);
                 } 
         }
+        else{
         if(draw==9){
-
             mid(30);   
-        }
+        }}
         but(8).disabled ="true";});
 but(9).addEventListener('click',()=>{
     draw++;
@@ -243,7 +250,7 @@ but(9).addEventListener('click',()=>{
                 mid(10);
             }
     }
-        else{
+        else if(i==1){
             but(9).innerText="O";
             i--;
             i1=2; 
@@ -252,7 +259,8 @@ but(9).addEventListener('click',()=>{
                     mid(20);
                 }
         }
+        else{
         if(draw==9){
             mid(30);   
-        }
+        }}
         but(9).disabled ="true";});
