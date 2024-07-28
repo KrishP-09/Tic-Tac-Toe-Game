@@ -15,6 +15,7 @@ let body=document.querySelector('body');
 function but( b1)
 {
     let b2=document.querySelector("#b"+b1);
+    
     return b2;
 }
 
@@ -25,6 +26,8 @@ function mid(wol){
     {
         c1.innerHTML="<h1 >Winner is X</h1>";
         body.classList.add("wo");
+        console.log("hi 1");
+       
     }
     else if (wol==20){
         c1.innerHTML="<h1 ><i>Winner is O</i></h1>";
@@ -39,28 +42,27 @@ else{
 but(1).addEventListener('click',(box)=>{
     draw++;
     if(i==0){
-    but(1).innerText="X";
-    i++;
-    a=1;
-    if(a===1 && b===1&&c===1 || a==1&&d==1&& g==1 || a==1&&e==1&&i1==1)
-        {
-            mid(10);
-        }
-    }
-    else if(i==1){
-        but(1).innerText="O";
-         i--;
-        a=2;
-        if(a===2&&b===2&&c===2 || a==2&&d==2&& g==2 || a==2&&e==2&&i1==2)
+        but(1).innerText="X";
+        i++;
+        a=1;
+        if(a===1 && b===1&&c===1 || a==1&&d==1&& g==1 || a==1&&e==1&&i1==1)
             {
-                mid(20);
+                mid(10);
+                
+            }
+            else if(draw==9){
+                mid(30);
             }
         }
-        // draw
-    else{
-        if(draw==9){
-            mid(30);   
-        }}
+        else if(i==1){
+            but(1).innerText="O";
+            i--;
+            a=2;
+            if(a===2&&b===2&&c===2 || a==2&&d==2&& g==2 || a==2&&e==2&&i1==2)
+                {
+                    mid(20);
+                }
+            }
         but(1).disabled ="true";
     });
     
@@ -74,8 +76,11 @@ but(2).addEventListener('click',()=>{
             {
                 mid(10);
             }
+            else if(draw==9){
+                mid(30);
+            }
     }
-        else if(i==1){
+        else{
             but(2).innerText="O";
             i--; 
             b=2;
@@ -83,10 +88,7 @@ but(2).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-        }else{
-        if(draw==9){
-            mid(30);   
-        }}
+        }
         but(2).disabled ="true";
 });
 but(3).addEventListener('click',()=>{
@@ -99,8 +101,11 @@ but(3).addEventListener('click',()=>{
             {
                 mid(10);
             }
+            else if(draw==9){
+                mid(30);
+            }
     }
-        else if(i==1){
+        else{
             but(3).innerText="O";
             i--; 
             c=2;
@@ -108,10 +113,7 @@ but(3).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-            }else{
-        if(draw==9){
-            mid(30);   
-        }}
+            }
             but(3).disabled ="true";
     });
 
@@ -125,8 +127,11 @@ but(3).addEventListener('click',()=>{
             {
                 mid(10);
             }
+            else if(draw==9){
+                mid(30);
+            }
     }
-        else if(i==1){
+        else {
             but(4).innerText="O";
             i--;
             d=2; 
@@ -134,10 +139,7 @@ but(3).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-            }else{
-        if(draw==9){
-            mid(30);   
-        }}
+            }
             but(4).disabled ="true";
     });
         but(5).addEventListener('click',()=>{
@@ -150,8 +152,11 @@ but(3).addEventListener('click',()=>{
             {
                 mid(10);
             }
+            else if(draw==9){
+                mid(30);
+            }
     }
-       else if(i==1){
+        else{
             but(5).innerText="O";
             i--; 
             e=2
@@ -159,10 +164,7 @@ but(3).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-            }else{
-        if(draw==9){
-            mid(30);   
-        }}
+            }
             but(5).disabled ="true";
     });
         but(6).addEventListener('click',()=>{
@@ -175,8 +177,11 @@ but(3).addEventListener('click',()=>{
             {
                 mid(10);
             }
+            else if(draw==9){
+                mid(30);
+            }
     }
-      else if(i==1){
+        else{
             but(6).innerText="O";
             i--;
             f=2; 
@@ -184,10 +189,7 @@ but(3).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-            }else{
-        if(draw==9){
-            mid(30);   
-        }}
+            }
             but(6).disabled ="true";
     });
         but(7).addEventListener('click',()=>{
@@ -200,8 +202,11 @@ but(3).addEventListener('click',()=>{
             {
                 mid(10);
             }
+            else if(draw==9){
+                mid(30);
+            }
     }
-        else if(i==1){
+        else{
             but(7).innerText="O";
             i--;
             g=2; 
@@ -209,10 +214,7 @@ but(3).addEventListener('click',()=>{
                 {
                     mid(20);
                 }
-        }else{
-        if(draw==9){
-            mid(30);   
-        }}
+        }
         but(7).disabled ="true";});
 but(8).addEventListener('click',()=>{
     draw++;
@@ -224,8 +226,11 @@ but(8).addEventListener('click',()=>{
             {
                 mid(10);
             }
+            else if(draw==9){
+                mid(30);
+            }
     }
-        else if(i==1){
+        else{
             but(8).innerText="O";
             i--;
             h=2;
@@ -234,10 +239,6 @@ but(8).addEventListener('click',()=>{
                     mid(20);
                 } 
         }
-        else{
-        if(draw==9){
-            mid(30);   
-        }}
         but(8).disabled ="true";});
 but(9).addEventListener('click',()=>{
     draw++;
@@ -249,8 +250,11 @@ but(9).addEventListener('click',()=>{
             {
                 mid(10);
             }
+            else if(draw==9){
+                mid(30);
+            }
     }
-        else if(i==1){
+        else{
             but(9).innerText="O";
             i--;
             i1=2; 
@@ -259,8 +263,4 @@ but(9).addEventListener('click',()=>{
                     mid(20);
                 }
         }
-        else{
-        if(draw==9){
-            mid(30);   
-        }}
         but(9).disabled ="true";});
